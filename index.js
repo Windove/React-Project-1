@@ -1,23 +1,25 @@
-// import React from "react"
-// import ReactDOM from "react-dom"
+import React from "react"
+import ReactDOM from "react-dom"
 
-// define staticPage element
-const staticPage = (
-    <div>
-        <img src="./react-icon.png" width="150px"/>
-        <h1>Fun facts about React</h1>
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100K stars on Github</li>
-            <li>Is maintained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-    </div>
-)
+// import elements
+import Header from "./elements/Header"
+import Main from "./elements/Main"
+import Footer from "./elements/Footer"
 
-// render staticPage element
+// create App element
+function App() {
+    return (
+        <div className="page">
+            <Header />
+            <Main />
+            <Footer />
+        </div>
+
+    )
+}
+
+// render page
 ReactDOM.render(
-    staticPage,
+    <App />,
     document.getElementById("root")
 )

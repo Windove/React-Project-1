@@ -1,4 +1,47 @@
 html, body {
-    margin: 10px;
+    margin: 0;
     padding: 0;
+}
+
+h1, ul {
+    margin: 0;
+}
+
+.navbar-items {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-items > li {
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-icon {
+    width: 50px;
+}
+
+.page {
+    margin: 10px;
+    width: 350px;
+    height: 100%;
+    border: 2px solid black;
+    font-weight: 300;
+}
+
+.main {
+    padding: 10px;
+}
+
+.footer {
+    padding: 5px;
+    background-color: grey;
+    color: white;
 }
