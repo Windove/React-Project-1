@@ -5,7 +5,7 @@ import Main from "./components/Main"
 // create App
 export default function App() {
     return (
-        <div>
+        <div className="container">
             <Navbar />
             <Main />
         </div>
